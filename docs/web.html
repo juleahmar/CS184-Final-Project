@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>
+  body {
+    padding: 100px;
+    width: 1000px;
+    margin: auto;
+    text-align: left;
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #121212;
+  }
+  h1, h2, h3, h4 {
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+</style>
+<title>CS 184 Final Project: Milestone Progress Report</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+</head>
+
+
+<body>
+
+<h1 align="middle">CS 184: Computer Graphics and Imaging, Spring 2019</h1>
+<h1 align="middle">Final Project Milestone Progress Report</h1>
+<h2 align="middle">Nathan Petreaca (3033319031), Frankie Eder, Jule Ahmar (3031851720)</h2>
+
+<!--
+<br><br>
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="pics/colorWheelMess.png" align="middle" width="400px"/>
+      </td>
+    </tr>
+  </table>
+</div>
+-->
+<div>
+
+<h2 align="middle">Overview</h2>
+<p> As stated in our original project proposal, our goal is to add CG objects into a photograph, while preserving the actual lighting form the scene. We are essentially attempting to recreate, and basing our work from, “Rendering Synthetic Objects into Real Scenes: Bridging Traditional and Image-based Graphics with Global Illumination and High Dynamic Range Photography“, a 1998 paper by Paul Debevec. Just as in the paper, our light probe will be a mirrored sphere ball, and we will capture the light falling on the ball via a camera calibration method.</p>
+
+<h2 align="middle">Preliminary Results</h2>
+
+<p>The first step we took in this project was taking the necessary HDR images of various scenes, using a light probe to capture all of the environment light. As previously discussed, we used a stainless steel mirrored ball sphere as our light probe. We then made EXR environment maps out of the images of these balls, in order to use in the future for adding CG objects to the scenes. Finally, we created an algorithm to visualize response curves, and did tone mapping for viewing.  </p>
+
+<h2 align="middle">Progress Relative to Plan</h2>
+
+<p>In our original project writeup, we had the following goals for our 2 week checkpoint: <br>
+	&nbsp;- HDR images <br>
+	&nbsp;&nbsp;&nbsp;1. Collect images <br>
+	&nbsp;&nbsp;&nbsp;2. Implement Code <br>
+	&nbsp;&nbsp;&nbsp;3. Create error reduction algorithm to generate response curves <br>
+	&nbsp;&nbsp;&nbsp;4. Tone map images for viewing. <br> <br>
+
+	And had the following goals for Week 3: <br>
+	&nbsp;- Correct environment maps from mirrored sphere <br>
+	&nbsp;&nbsp;&nbsp;1. Create correct mapping scheme from circular coordinates <br>
+	&nbsp;&nbsp;&nbsp;2.  Implement differential rendering to improve speed <br> <br>
+
+	As stated above, at this point we have completed all of our goals for our 2 week checkpoint, and have also made significant progress in our week three goal of creating EXR environment maps out of our images of the light probe. However, at this point, we are using photoshop to unwrap the images of the sphere ball onto a flat environment map. We will continue to use this method for now, and if we reach our final goal of adding CG objects into scenes with time to spare, we will attempt to write our own code to complete this part of the project.
+</p>
+
+<h2 align="middle">Updated Work Plan</h2>
+
+<p>At this point in time, our work plan has not changed. We are on track with where we believed we would be, if not a little bit ahead. As a result, we should have more time to focus on the most substantial and compelling part of the project, which consists of actually adding CG objects to the scene.</p>
+
+
+<h2 align="middle">Slides/Video Links</h2>
+
+<p>Slides: https://docs.google.com/presentation/d/18pzdvvusuEkUP5mUu4lpO1yOwYpvuGtPsM4-PU5HU2g/edit#slide=id.p<br>
+
+</p>
+
+</body>
+</html>
